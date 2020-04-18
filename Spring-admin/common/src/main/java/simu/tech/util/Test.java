@@ -7,6 +7,7 @@ public class Test {
 //        System.out.println( "n1:" + AdminUtils.isPtInPoly(AdminUtils.dotData().getX() , AdminUtils.dotData().getY() , AdminUtils.areaData()));
         String A = "10";
         System.out.println(Double.parseDouble(A));
+        System.out.println("ceshi");
     }
 
 }

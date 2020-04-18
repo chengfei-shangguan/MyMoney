@@ -13,7 +13,6 @@
         <module name="order-service-api" />
         <module name="user-service-api" />
         <module name="gateway" />
-        <module name="file-service-api" />
         <module name="zipkin" />
         <module name="rabbitmq-producer-service-api" />
         <module name="elasticsearch-service-api" />
@@ -22,8 +21,9 @@
         <module name="user-service" />
         <module name="solr-service" />
         <module name="solr-service-api" />
-        <module name="vue-service" />
+        <module name="file-service-api" />
         <module name="common-db" />
+        <module name="vue-service" />
         <module name="rabbitmq-consumer-service-api" />
         <module name="eureka-server" />
         <module name="elasticsearch-service" />
