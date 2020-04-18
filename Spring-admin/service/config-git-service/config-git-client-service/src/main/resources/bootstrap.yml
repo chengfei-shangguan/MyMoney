@@ -1,0 +1,35 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: hellxztest
+  cloud:
+    config:
+      uri: http://localhost:7002/ # 配置中心的具体地址，即 config-server
+#      name: config-client # 对应 {application} 部分
+      profile: dev # 对应 {profile} 部分
+      label: master # 对应 {label} 部分，即 Git 的分支。如果配置中心使用的是本地存储，则该参数无用
+#  cloud:
+#    config:
+#      uri: http://localhost:7002/    #Config server的uri
+#      profile: dev                          #指定的环境
+#      label: master                        #指定分支
+#      discovery:
+#        enabled: true                     #开启配置服务发现
+#        serviceId: config-server        #配置中心服务名
+#      fail-fast: true                        #快速失败
+#      retry:
+#        initial-interval: 1100             #首次重试间隔时间，默认1000毫秒
+#        multiplier: 1.1D                    #下一次重试间隔时间的乘数，比如开始1000，下一次就是1000*1.1=1100
+#        max-interval: 2000              #最大重试时间，默认2000
+#        max-attempts: 3                 #最大重试次数，默认6次
+server:
+  port: 7003
+management:  #Springboot2.0之后必须已此方式刷新配置,访问http://localhost:7003/actuator/refresh,POST方式
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health

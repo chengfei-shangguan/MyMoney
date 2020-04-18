@@ -1,0 +1,20 @@
+server:
+  port: 89
+
+  # mybatis 配置
+mybatis:
+  type-aliases-package: simu.tech.pojo
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+  ## SqlServer 配置
+
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://127.0.0.1:1433;databasename=ADMIN
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: root
+

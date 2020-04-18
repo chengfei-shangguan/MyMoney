@@ -1,0 +1,25 @@
+server:
+  port: 7002
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chengfei-shangguan/MyMoney
+          searchPaths: config-repo
+          username: scf180015@163.com  #账号密码写真实的快一些我觉得，不使用也能访问有点慢
+          password: scf960826
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh  #以POST方式访问服务端的/actuator/bus-refresh接口,通知所有客户端进行刷新
+

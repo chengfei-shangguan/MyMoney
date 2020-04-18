@@ -1,0 +1,10 @@
+server:
+  port: 4444
+spring:
+  application:
+    name: zipkin_server
+management: #必须配置这个,不然访问不到链路中心的界面
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

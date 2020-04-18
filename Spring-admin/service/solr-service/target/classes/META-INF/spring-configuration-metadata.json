@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "solr",
+      "type": "simu.tech.config.SolrConfigProperties",
+      "sourceType": "simu.tech.config.SolrConfigProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "solr.core",
+      "type": "java.lang.String",
+      "sourceType": "simu.tech.config.SolrConfigProperties"
+    },
+    {
+      "name": "solr.dir",
+      "type": "java.lang.String",
+      "sourceType": "simu.tech.config.SolrConfigProperties"
+    },
+    {
+      "name": "solr.server",
+      "type": "java.lang.String",
+      "sourceType": "simu.tech.config.SolrConfigProperties"
+    }
+  ],
+  "hints": []
+}

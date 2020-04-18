@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="file-web" />
+        <module name="config-git-server-service" />
+        <module name="sqlserver-service" />
+        <module name="config-git-client-service" />
+        <module name="order-service-api" />
+        <module name="user-service-api" />
+        <module name="gateway" />
+        <module name="file-service-api" />
+        <module name="zipkin" />
+        <module name="rabbitmq-producer-service-api" />
+        <module name="elasticsearch-service-api" />
+        <module name="file-service" />
+        <module name="oauth" />
+        <module name="user-service" />
+        <module name="solr-service" />
+        <module name="solr-service-api" />
+        <module name="vue-service" />
+        <module name="common-db" />
+        <module name="rabbitmq-consumer-service-api" />
+        <module name="eureka-server" />
+        <module name="elasticsearch-service" />
+        <module name="config-svn-server-service" />
+        <module name="rabbitmq-consumer-service" />
+        <module name="config-svn-client-service" />
+        <module name="rabbitmq-producer-service" />
+        <module name="common" />
+        <module name="mybatis-generator" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="common-db" options="-parameters" />
+      <module name="config-git-client-service" options="-parameters" />
+      <module name="config-git-server-service" options="-parameters" />
+      <module name="config-svn-client-service" options="-parameters" />
+      <module name="config-svn-server-service" options="-parameters" />
+      <module name="elasticsearch-service" options="-parameters" />
+      <module name="elasticsearch-service-api" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="file-service" options="-parameters" />
+      <module name="file-service-api" options="-parameters" />
+      <module name="file-web" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="mybatis-generator" options="-parameters" />
+      <module name="oauth" options="-parameters" />
+      <module name="order-service-api" options="-parameters" />
+      <module name="rabbitmq-consumer-service" options="-parameters" />
+      <module name="rabbitmq-consumer-service-api" options="-parameters" />
+      <module name="rabbitmq-producer-service" options="-parameters" />
+      <module name="rabbitmq-producer-service-api" options="-parameters" />
+      <module name="solr-service" options="-parameters" />
+      <module name="solr-service-api" options="-parameters" />
+      <module name="sqlserver-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="user-service-api" options="-parameters" />
+      <module name="vue-service" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
+    </option>
+  </component>
+</project>
